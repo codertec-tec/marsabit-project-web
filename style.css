@@ -1,0 +1,227 @@
+body{
+margin:0;
+font-family:Roboto;
+background:#F5F7FA;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#1B5E20;
+}
+
+.nav-logo img{
+height:40px;
+width:auto;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:20px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+height:85vh;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('Assets/bg.png');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:40px;
+}
+
+.explore-btn{
+background:#ff6b35;
+padding:16px 32px;
+border-radius:8px;
+text-decoration:none;
+color:white;
+font-size:18px;
+font-weight:600;
+display:inline-block;
+margin-top:20px;
+transition:0.3s;
+}
+
+.explore-btn:hover{
+background:#ff3d00;
+transform:translateY(-2px);
+}
+
+.about{
+padding:60px;
+background:white;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.about-image img{
+width:100%;
+height:auto;
+}
+
+.gis-health{
+margin-top:40px;
+color:#333;
+}
+
+.webmap{
+padding:80px 10%;
+background:#f4f7fb;
+text-align:center;
+}
+
+.section-title{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.map-description{
+max-width:700px;
+margin:auto;
+margin-bottom:40px;
+color:#555;
+}
+
+.map-wrapper{
+width:100%;
+height:520px;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+
+.map-wrapper iframe{
+width:100%;
+height:100%;
+border:none;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+height:auto;
+}
+
+.methodology{
+padding:60px;
+text-align:center;
+}
+
+.method-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.method-card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.method-card img{
+width:100%;
+height:auto;
+border-radius:8px;
+}
+/* Recommendations Section */
+.recommendations {
+  padding: 80px 10%;
+  background: #f5f7fa;
+  text-align: center;
+}
+
+.recommendations h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.rec-description {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 50px;
+  color: #555;
+}
+
+.rec-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.rec-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.rec-card:hover {
+  transform: translateY(-8px);
+}
+
+.rec-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.rec-card h3 {
+  margin: 10px 0 10px;
+}
+
+.rec-card p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+footer{
+background:#1B5E20;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+.footer-logo{
+height:35px;
+margin-bottom:10px;
+}
+
+.social-icons a{
+color:white;
+font-size:22px;
+margin:10px;
+}

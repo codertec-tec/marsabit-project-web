@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Marsabit Healthcare Accessibility GIS</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+
+<div class="nav-logo">
+<img src="Assets/log.png" alt="Project Logo">
+</div>
+
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#map">Web Map</a></li>
+<li><a href="#analysis">Analysis</a></li>
+<li><a href="#methodology">Methodology</a></li>
+<li><a href="#Recommendations">Recommedations</a></li>
+</ul>
+
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-content">
+
+<h1>Healthcare Accessibility and Population Service Gaps in Marsabit County</h1>
+
+<p>
+A GIS based spatial analysis project exploring healthcare accessibility and underserved regions across Marsabit County Kenya.
+</p>
+
+<a href="#map" class="explore-btn">Explore the Web Map</a>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+
+<h2>About the Project</h2>
+
+<div class="about-grid">
+
+<div>
+<h3>Study Area</h3>
+<p>
+The study focuses on Marsabit County, located in the northern part of Kenya. The county covers a vast semi-arid landscape characterized by scattered settlements,
+limited infrastructure, and diverse ecological zones including forests, wetlands, and protected areas.
+Marsabit County has a relatively low population density, with many communities living in remote rural areas where 
+access to essential services such as healthcare can be challenging. The county is connected by a network of major and minor roads
+linking towns and settlements, though large distances between facilities often affect service accessibility.
+Due to these characteristics, Marsabit provides a suitable case study for analyzing healthcare accessibility
+population distribution, and environmental constraints using GIS. The spatial analysis helps highlight areas
+with limited healthcare coverage and supports planning for improved service delivery across the region.
+</p>
+
+<h3>Objectives</h3>
+<h4>General objectives</h4>
+<ul>
+<li>
+To analyze the spatial distribution and accessibility of healthcare facilities in Marsabit County using GIS in order to identify service gaps and
+support better healthcare planning.
+</li>
+<h4>Specific Objectives</h4>
+<li>To map the spatial distribution of health facilities across Marsabit County.</li>
+<li>To analyze the population distribution in relation to existing health facilities.</li>
+<li>To evaluate healthcare service coverage using buffer analysis around existing facilities.</li>
+<li>To identify populated areas with limited access to healthcare services.</li>
+<li>To determine suitable locations for potential new health facilities while considering road accessibility
+   and environmental constraints such as protected areas, forests, and wetlands</li>
+</ul>
+</div>
+
+<div class="about-image">
+<img src="Assets/STUDY AREA.png" alt="study area">
+</div>
+
+</div>
+
+<div class="gis-health">
+<h3>GIS in Healthcare</h3>
+<p>
+GIS in Healthcare
+Geographic Information Systems (GIS) play an important role in improving healthcare planning and service delivery by enabling the collection,
+analysis, and visualization of spatial data related to health services and populations. GIS helps decision-makers understand how healthcare 
+facilities are distributed across geographic areas and how easily communities can access these services.
+In healthcare planning, GIS can be used to map the locations of hospitals, health centers, and dispensaries, analyze their proximity to population 
+centers, and evaluate accessibility through transportation networks such as roads. This allows planners to identify areas with insufficient healthcare
+coverage and prioritize locations where new health facilities may be needed.
+GIS is also useful for public health monitoring, disease surveillance, emergency response, and resource allocation. By integrating different datasets
+such as population distribution, environmental factors, and infrastructure networks, GIS provides valuable insights that support evidence-based 
+decision-making in the health sector.
+Overall, GIS enhances the ability of governments, healthcare organizations, and planners to improve service delivery, reduce spatial inequalities 
+in healthcare access, and support sustainable health infrastructure development.
+</p>
+</div>
+
+</section>
+
+<!-- WEB MAP -->
+<section id="map" class="webmap">
+
+<h2 class="section-title">Interactive GIS Web Map</h2>
+
+<p class="map-description">
+Explore healthcare facilities, road networks, and environmental features across Marsabit County using this interactive map.
+</p>
+
+<div class="map-wrapper">
+<iframe src="https://codertec-tec.github.io/marsabit-webmap/" allowfullscreen loading="lazy"></iframe>
+</div>
+
+</section>
+
+<!-- SPATIAL ANALYSIS -->
+<section id="analysis" class="analysis">
+<h2>Spatial Analysis Insights</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="Assets/POPULATION.png" alt="Population">
+<h3>Population Distribution</h3>
+<p>This population distribution map illustrates how people are spatially distributed within Marsabit County, providing an important 
+  foundation for analyzing health service accessibility in the region. The map shows that population clusters are mainly concentrated around
+  major towns, represented by the orange points, while large parts of the county remain sparsely populated. These settlement patterns suggest that 
+  many residents live near key service centers where infrastructure and public facilities,
+   including health services, are more likely to be available. The higher population concentrations around towns highlight areas with potentially 
+   greater demand for healthcare facilities such as hospitals, clinics, and dispensaries.
+
+However, the map also reveals extensive low-density areas across the county, which may experience limited access to healthcare due to long travel
+ distances and poor infrastructure. In a large and predominantly arid county like Marsabit, dispersed settlements and challenging terrain can 
+ significantly affect the ability of residents to reach medical services in a timely manner. Therefore, understanding the spatial relationship between 
+ population distribution and settlement centers is essential for identifying underserved areas, guiding the placement of new health facilities, and improving 
+ overall healthcare accessibility within the county.</p>
+</div>
+
+<div class="card">
+<img src="Assets/DISTRI.png" alt="Facility Coverage">
+<h3>Facility Coverage</h3>
+<p>This map shows the spatial distribution of health facilities across Marsabit County, forming a key component of the health accessibility analysis in
+   the study area. Different symbols represent various types of health facilities, including dispensaries, health centres, district hospitals, clinics,
+    and laboratories. The map also includes towns and major road networks, which are important for understanding how residents travel to access healthcare
+     services. 
+  Most facilities appear to be concentrated around major towns and along the main transport corridors, indicating that infrastructure and settlement 
+  patterns strongly influence where health services are located.
+
+However, the distribution also reveals that several parts of Marsabit County, particularly remote and sparsely populated areas, have fewer health facilities.
+ This uneven distribution suggests that some communities may need to travel long distances to reach essential healthcare services, which can limit timely 
+ medical care. In the context of the health accessibility project, this map helps identify potential service gaps and underserved regions, providing valuable
+  information for planning the placement of new facilities, improving road connectivity, and ensuring more equitable access to healthcare across the county.
+</p>
+</div>
+
+<div class="card">
+<img src="Assets/environmental.png" alt="Environmental Constraints">
+<h3>Environmental Constraints</h3>
+<p>This map illustrates the major environmental factors that may influence health accessibility across Marsabit County. It highlights key environmental features
+   such as forests, protected areas, and wetlands alongside towns and the road network. These features are important in the health accessibility project because
+    they can act as natural constraints that affect the movement of people and the placement of health facilities. For example, wetlands and protected areas may 
+    limit road construction or slow travel, while forested regions and conservation zones may restrict infrastructure development. The map therefore helps to
+     identify areas where environmental conditions could influence how easily residents can reach healthcare services.
+
+In the context of the project, understanding these environmental constraints is essential for planning equitable healthcare access across the county.
+ Some settlements located near wetlands or within protected landscapes may experience difficulties reaching nearby health facilities due to limited transportation
+  routes or environmental restrictions. By integrating environmental features with settlement locations and road networks, the map supports the identification of 
+  areas where healthcare accessibility may be reduced. This information can guide planners and decision-makers in improving road connectivity, selecting
+   appropriate sites for future health facilities, and ensuring that environmental conservation and healthcare access are balanced within Marsabit County.</p>
+</div>
+
+</div>
+</section>
+
+<!-- VISUAL INSIGHTS -->
+<section class="visual">
+<h2>Visual Insights</h2>
+
+<div class="cards">
+<div class="card">
+<img src="Assets/pie.png" alt="Facility Types">
+<h3>Facility Types</h3>
+<p>The chart illustrates the composition of health facility types in Marsabit County. Dispensaries make up the majority of healthcare facilities, accounting for 
+  61%, indicating that primary healthcare services are the 
+  most widely available across the county. Health centres represent 20%, while medical clinics account for 12%, providing additional levels of healthcare support.
+Other facility types such as district hospitals, nursing homes, laboratories, and other hospitals represent a much smaller proportion, each contributing 
+about 1–2% of the total. This distribution highlights that most healthcare services in Marsabit County are focused on basic primary care, while higher-level 
+medical facilities remain limited.</p>
+</div>
+
+<div class="card">
+<img src="Assets/LINEGRAPH1.png" alt="Facilities per Town">
+<h3>Facilities per Location</h3>
+<p>The chart shows the distribution of health facilities across different locations in Marsabit County. The results indicate that healthcare facilities are 
+  unevenly distributed, with some areas such as Moyale and Central locations having a higher number of facilities, while many other locations have only one
+   or two health facilities.
+The overall trend suggests that most settlements have limited healthcare infrastructure, which may affect access to medical services for nearby populations. 
+This uneven distribution highlights the need for improved healthcare planning and strategic placement of new facilities to ensure more balanced access to 
+healthcare services across the county.
+</p>
+</div>
+</div>
+</section>
+
+<!-- METHODOLOGY -->
+<section id="methodology" class="methodology">
+<h2>Project Methodology</h2>
+
+<div class="method-grid">
+
+<div class="method-card">
+<img src="Assets/data collection.jpeg" alt="Data Collection">
+<h3>Data Collection</h3>
+<p>The data used in this study were obtained from secondary sources, primarily from online geospatial data repositories and official datasets.
+   The collected datasets included health facility locations, population distribution, road networks, towns, protected areas, forests, and wetlands
+    within Marsabit County. These datasets were acquired in spatial formats compatible with Geographic Information Systems (GIS).
+   The data were selected based on their relevance to analyzing healthcare accessibility and spatial distribution of services within the study area.
+  </p>
+</div>
+
+<div class="method-card">
+<img src="Assets/data processing.jpeg" alt="Data Processing">
+<h3>Data Processing</h3>
+<p>Following data acquisition, preprocessing procedures were carried out to ensure data quality and consistency. This involved data cleaning, attribute 
+  verification, and removal of incomplete or redundant records. Additionally, all datasets were reprojected to a common Coordinate Reference System (CRS)
+   to ensure spatial alignment during analysis. The datasets were also clipped to the administrative boundary of Marsabit County in order to focus the analysis
+    exclusively on the study area and eliminate unnecessary spatial data outside the region.
+</p>
+</div>
+
+<div class="method-card">
+<img src="Assets/spatial.png" alt="Spatial Analysis">
+<h3>Spatial Analysis</h3>
+<p>Spatial analysis techniques were applied to evaluate the distribution and accessibility of healthcare services across the county. 
+  Buffer analysis was conducted around existing health facilities to determine their service coverage areas and identify populations located within or beyond
+   these zones. Overlay analysis was used to integrate population data with healthcare facility locations in order to assess accessibility patterns. 
+   Environmental layers such as protected areas, forests, and wetlands were also incorporated to evaluate potential constraints when identifying suitable 
+   locations for additional healthcare facilities. 
+  These spatial analyses provided insights into areas that are underserved by existing healthcare infrastructure.</p>
+</div>
+
+<div class="method-card">
+<img src="Assets/visualization.png" alt="Visualization">
+<h3>Visualization</h3>
+<p>The results of the spatial analysis were communicated through a series of thematic maps and graphical representations. 
+  Maps were produced to illustrate the distribution of health facilities, population density, transportation networks, environmental constraints, 
+  and healthcare service coverage. In addition, charts such as pie charts and distribution graphs were generated to present the composition and 
+  spatial distribution of different types of healthcare facilities. 
+  These visualizations enhance the interpretation of spatial patterns and support effective communication of the study findings.</p>
+</div>
+
+</div>
+</section>
+<!-- RECOMMENDATIONS -->
+<section id="Recommedations">
+  <h2>Key Recommendations</h2>
+
+  <p class="rec-description">
+    Based on the spatial analysis of healthcare accessibility and population distribution in Marsabit County, the following recommendations are proposed:
+  </p>
+
+  <div class="rec-grid">
+
+    <div class="rec-card">
+      <img src="Assets/illust1.png" alt="Underserved Regions Map">
+      <h3>Establishment of Additional Health Facilities</h3>
+      <p>
+        The analysis indicates that several areas in Marsabit County fall outside the 10 km service coverage of existing health facilities.
+         It is recommended that new health facilities be established in underserved areas to improve healthcare accessibility for the local population.
+
+      </p>
+    </div>
+
+    <div class="rec-card">
+      <img src="Assets/illustration.png" alt="Road Infrastructure Map">
+      <h3>Improvement of Road Infrastructure</h3>
+      <p>
+        Limited road connectivity can reduce access to healthcare services even when facilities exist. Improving the transportation network will 
+        enhance movement of patients and healthcare providers, especially in remote settlements.
+      </p>
+    </div>
+
+    <div class="rec-card">
+      <img src="Assets/illustr4.png" alt="Environmental Considerations Map">
+      <h3>Consideration of Environmental Constraints</h3>
+      <p>
+        Future health infrastructure development should take into account protected areas, forests, and wetlands to 
+        ensure environmentally sustainable development and avoid ecological conflicts.
+      </p>
+    </div>
+
+    <div class="rec-card">
+      <img src="Assets/ILLUSTRA3.png" alt="GIS-Based Decision Support">
+      <h3>Use of GIS for Health Planning</h3>
+      <p>
+        County governments and health planners should adopt Geographic Information Systems (GIS) as a decision-support tool for planning the location of future health facilities, 
+        monitoring service coverage, and identifying underserved populations.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<img src="Assets/log.png" class="footer-logo" alt="Footer Logo">
+
+<p>GIS Project – Healthcare Accessibility in Marsabit County</p>
+
+<div class="social-icons">
+<a href="https://www.linkedin.com/in/coder-tec-5a3a87300?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fab fa-linkedin"></i></a>
+<a href="https://x.com/codercodertec" target="_blank"><i class="fab fa-x-twitter"></i></a>
+<a href="https://www.facebook.com/Wilson.kilungya" target="_blank"><i class="fab fa-facebook"></i></a>
+<a href="https://wa.me/254706783613" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<a href="mailto:codertecs@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+</div>
+
+<p>© 2026 Marsabit GIS Project | Developed by CoderTec</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
